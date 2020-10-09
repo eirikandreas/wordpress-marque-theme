@@ -1,0 +1,1271 @@
+/*------------------------------------------------
+> > > TABLE OF CONTENTS:
+--------------------------------------------------
+1.0 - General
+2.0 - Bootstrap ovverride
+3.0 - Navigation
+4.0 - Frontpage
+5.0 - Page Styles
+6.0 - Button Styles
+7.0 - Sidebar
+8.0 - Footer
+9.0 - Comments
+10.0 - Text sizing for responsive titles
+11.0 - Media Queries
+12.0 - WP Contact Form style
+
+------------------------------------------------*/
+
+/*------------------------------------------------
+1.0 - General
+------------------------------------------------*/
+:focus {
+    color: #fff;
+}
+::selection {
+    background: #ee0979;
+}
+
+::-moz-selection {
+    background: #ee0979;
+    /* Gecko Browsers */
+}
+body {
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    background: #101010;
+    color: #eeeeee;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+a {
+    color: #eeeeee;
+}
+
+a:visited {
+    color: #eeeeee;
+}
+
+h6 {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.padding-top {
+    padding-top: 80px;
+}
+
+.vh-full {
+    height: 100vh;
+}
+
+/*------------------------------------------------
+2.0 - Bootstrap overrides
+------------------------------------------------*/
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+/*------------------------------------------------
+3.0 - Navigation
+------------------------------------------------*/
+.main-navigation {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+.main-navigation a:hover {
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-item a:active {
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.current-menu-item>a,
+.current_page_item>a {
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.footer-menu .current-menu-item>a,
+.footer-menu .current_page_item>a {
+
+    background-clip: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #fff;
+    text-decoration: underline;
+}
+
+
+.main-navigation li {
+    margin-left: 2rem;
+}
+
+
+
+/*------------------------------------------------
+4.0 - Frontpage
+------------------------------------------------*/
+.front-heading {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.front-heading h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.frontpage-content {
+    padding-top: 6rem;
+    margin: auto;
+}
+
+.frontpage-content h6 {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-area {
+    margin: 0 auto;
+}
+
+.frontpage-portfolio {
+    padding-bottom: 5rem;
+}
+
+.frontpage-blog {
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 5rem;
+}
+
+.front-blog-posts {
+    position: relative;
+
+}
+
+.page-image-header {
+    margin-bottom: 3rem;
+}
+
+.front-post {
+    position: relative;
+
+}
+
+.front-post-title a {
+    color: #eeeeee;
+}
+
+.front-post-entry {
+    font-size: 2.2rem;
+}
+
+.front-post-content:after,
+.front-post-entry:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.front-post-thumb {
+    background-size: cover;
+
+}
+
+.portfolio-thumb {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1px;
+}
+
+.post-thumb {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    border-radius: 1px;
+
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+
+/*------------------------------------------------
+5.0 - Page Styles
+------------------------------------------------*/
+.site-header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 10001;
+    margin-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+#content {
+    position: relative;
+    background-color: #101010;
+    z-index: 5;
+}
+
+.page {
+    margin: 0;
+}
+
+.post {
+    margin: 0;
+}
+
+.page-title {
+    font-weight: bold;
+}
+
+.page-title-header {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.site-title {
+    display: none;
+}
+
+.frontpage-header {
+    position: relative;
+    height: 100vh;
+}
+
+.frontpage-description h1 {
+    letter-spacing: -1.6px;
+}
+
+.header-title h1 {
+    position: absolute;
+    bottom: 240px;
+    z-index: 1003;
+    color: #fff;
+}
+
+.header-title {
+    position: relative;
+    height: 100vh;
+    width: 600px;
+    z-index: 1002;
+}
+
+.header-bg {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-image {
+    z-index: 999;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cat-links {
+    margin-right: 1rem;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.entry-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.post-feed-title {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.overlay-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: ease .3s;
+}
+
+.overlay-dark:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: ease .3s;
+}
+
+.overlay-dark-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: ease .3s;
+}
+
+.entry-title {
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.site-main {
+    position: relative;
+}
+
+
+.post-feed-container {
+    position: relative;
+    min-height: 400px;
+    margin-right: 20px;
+
+}
+
+.post-feed-image {
+    position: absolute;
+    right: 0;
+    z-index: 998;
+}
+
+.post-feed-thumb {
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+
+}
+
+.post-feed-title {
+    z-index: 1001;
+    height: 400px;
+}
+
+.post-feed-title h2 {
+    padding: 0;
+    margin: 0;
+
+    z-index: 1003;
+    position: absolute;
+    bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post-entry-container {
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+
+.entry-meta {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.single-entry-meta {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article {
+    position: relative;
+}
+
+.wp-block-image figcaption {
+    color: #fff;
+}
+
+.portfolio-thumb-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 106, 0, 1);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.page-portfolio-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    max-width: 2000px;
+}
+
+.portfolio-item-link {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-thumb-container:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-meta {
+    margin-bottom: 2rem;
+    border-right: 2px solid #fff;
+}
+
+.portfolio-single-image img {
+    width: auto;
+    max-height: 800px;
+    margin-bottom: 30px;
+}
+
+.item-height-1 {
+    height: 500px;
+}
+
+.item-height-2 {
+    height: 236px;
+}
+
+.item-height-3 {
+    height: 280px;
+}
+
+.single-post-meta {
+    display: flex;
+    align-items: center;
+    bottom: 2rem;
+    width: 100%;
+    color: #fff;
+
+}
+
+.single-post-meta a {
+    color: #fff;
+}
+
+.single-post-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.single-post-title-header h1 {
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.single-excerpt {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.single-post-entry {
+    font-size: 1.2rem;
+    color: #fff;
+    padding-right: 2rem;
+    border-right: 1px solid rgba(127, 127, 127, .1);
+}
+
+
+.entry-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.entry-content {
+    margin-top: 0;
+}
+
+.page-header-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    max-width: 2000px;
+    margin-bottom: 3rem;
+}
+
+.page-header-image-2 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    max-width: 2000px;
+    margin-bottom: 3rem;
+}
+
+
+.view-more-box {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    background-color: #222;
+    transition: .5s ease;
+}
+
+.view-more {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.view-more-box:hover {
+    background-color: rgba(255, 106, 0, 1);
+}
+
+.custom-box {
+    position: relative;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    line-height: 0;
+}
+
+.custom-box-center {
+    position: absolute;
+    top: 40%;
+}
+
+.custom-box-position {
+    position: relative;
+}
+
+.custom-box-text {
+    margin-bottom: 5rem;
+    line-height: 2.5rem;
+}
+
+.posts-navigation {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+
+.bottom-bar {
+    width: 100%;
+    height: 3px;
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+}
+
+
+
+/*------------------------------------------------
+6.0 - Button Styles
+------------------------------------------------*/
+.header-button {
+    position: absolute;
+    bottom: 150px;
+}
+
+.square-btn {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 2px solid #ff6a00;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    margin: 0;
+    line-height: 1.2rem;
+    min-width: 100px;
+}
+
+.button-cont input[type="submit"] {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    margin: 0;
+    background: transparent;
+    line-height: 1.2rem;
+    min-width: 240px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.button-cont input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.square-btn-header {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    margin: 0;
+    line-height: 1.2rem;
+    min-width: 240px;
+    text-align: center;
+}
+
+.square-btn-header:hover {
+    color: #000;
+}
+
+.header-button .hvr-bounce-to-right:before {
+    background-color: #fff;
+}
+
+.header-button .hvr-bounce-to-right:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.button-cont .hvr-bounce-to-right:before {
+    background-color: #fff;
+}
+
+.button-cont .hvr-bounce-to-right:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.read-more {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold;
+}
+
+/*------------------------------------------------
+7.0- Sidebar
+------------------------------------------------*/
+.sidebar-area {
+
+    width: 100%;
+}
+
+.widget-box {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+}
+
+.widget-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.widget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.widget_recent_entries li {
+    margin-bottom: 1rem;
+}
+
+.search-field {
+    border: 2px solid #fff;
+    border-radius: 0px;
+
+}
+
+.search-form input {
+    background: #101010;
+}
+
+.search-form input[type="search"] {
+    background-color: #101010;
+    width: 100%;
+}
+
+.search-form input[type="submit"] {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #101010;
+    color: #fff;
+    line-height: 0;
+}
+
+.search-form input[type="submit"]:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+}
+
+.author-image {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------
+8.0 - Footer
+------------------------------------------------*/
+.site-footer {
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 200px;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1;
+    color: #000;
+}
+
+.footer-position {
+    position: absolute;
+    top: 30%;
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.site-info {
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    opacity: .6;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-menu li {
+    font-size: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/*------------------------------------------------
+9.0 - Comments
+------------------------------------------------*/
+.comment-content {
+    font-size: 1.6rem;
+}
+
+.comments-area h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 3rem;
+}
+
+.comment-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.comments-area h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.comments-area label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.comment-body {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.comment-meta {
+    font-family: Helvetica, arial, sans-serif;
+    padding-bottom: .5rem;
+}
+
+.comment-meta b {
+    background: #ee0979;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comment-meta img {
+    border-radius: 50%;
+}
+
+#comments ol {
+    list-style: none;
+}
+
+#comment textarea {
+    color: #fff;
+}
+
+textarea {
+    background-color: #101010;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 0px;
+}
+
+/*------------------------------------------------
+10.0 - Text sizing for responsive titles
+------------------------------------------------*/
+.text-lg {
+    font-family: 'Proxima Nova', arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+.text-md {
+    font-family: 'Proxima Nova', arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+.text-s {
+    font-family: 'Proxima Nova', arial, sans-serif;
+    font-size: 1rem;
+}
+
+.title-s {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+.title-md {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+.title-lg {
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+.title-xl {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/*------------------------------------------------
+11.0 - Media Queries
+------------------------------------------------*/
+@media (max-width: 576px) {
+    .portfolio-meta {
+        margin-bottom: 2rem;
+        border-right: none;
+    }
+
+    .site-branding {
+        z-index: 500001;
+    }
+
+
+    #site-navigation {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .main-navigation a {
+        color: #fff;
+    }
+
+    .main-navigation a:hover {
+        color: red;
+        background-clip: none;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: #fff;
+    }
+
+    .main-navigation.toggled {
+        position: absolute;
+        padding: 0;
+        height: 100vh;
+        left: -15px;
+        right: -15px;
+    }
+
+    .main-navigation a {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .main-navigation a:hover {
+        color: #000;
+        background-clip: none;
+    }
+
+    .menu-toggle {
+        /* button */
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: 500000;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+    }
+
+    .menu-toggle .material-icons {
+        font-size: 3rem;
+    }
+
+    .top-navigation {
+        width: 100%;
+    }
+
+    .menu-responsive {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: -100px;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 150px;
+        background: #ee0979;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ff6a00, #ee0979);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .menu-responsive a {
+        color: #fff;
+    }
+
+    .menu-responsive a:hover {
+        color: #fff;
+        background-clip: none;
+        text-decoration: underline;
+    }
+
+    .menu-responsive li {
+        padding-left: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+        float: none;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .text-lg {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 2.8rem;
+    }
+
+    .text-md {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 1.8rem;
+    }
+
+    .text-s {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .title-md {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .title-lg {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .title-xl {
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+
+    .title-xxl {
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 14rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .footer-menu li {
+        font-size: 2rem;
+        display: inline;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .text-lg {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 2.8rem;
+    }
+
+    .text-md {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 1.8rem;
+
+    }
+
+    .text-s {
+        font-family: 'Proxima Nova', arial, sans-serif;
+        font-size: 1.6rem;
+
+    }
+
+    .title-md {
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .title-lg {
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .title-xl {
+        font-family: Helvetica, arial, sans-serif;
+        font-size: 6rem;
+        font-weight: bold;
+    }
+
+    .footer-menu li {
+        font-size: 2rem;
+        display: inline;
+    }
+
+}
+
+/*------------------------------------------------
+12.0 - WP Contact Form style
+------------------------------------------------*/
+.wpcf7-form {
+    width: 100%;
+}
+
+.wpcf7-form label {
+    width: 100%;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    background: #101010;
+    color: #FFF;
+    font-family: lora, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.wpcf7 select {
+    background: #101010;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    width: 100%;
+    color: #fff;
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    margin: 0;
+    line-height: 1.2rem;
+    min-width: 240px;
+    text-align: center;
+    background: #101010;
+    color: #fff;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    background-color: #fff;
+    color: #101010;
+}
